@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadijatou Condé - Data Scientist</title>
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- NOTRE CSS EXTERNE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Section Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo personnalisé -->
+            <a class="navbar-brand" href="#accueil">
+                <i class="bi bi-graph-up"></i> Kadijatou Condé
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recompenses">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil/Hero -->
+    <section id="accueil" class="min-vh-100 d-flex align-items-center bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- COLONNE PHOTO - Version améliorée -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+               <img src="images/photoprofile2.jpg" 
+                    alt="Photo de Kadijatou Condé" 
+                    class="img-fluid rounded-circle border border-5 border-white shadow"
+                    loading="lazy">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Kadijatou Condé</h1>
+                    <h2 class="text-primary mb-3">Étudiante en Data Science</h2>
+                    <p class="lead mb-4">
+                        Passionnée par le Big Data et l'Intelligence Artificielle, je transforme des données complexes en insights actionnables. 
+                        Actuellement étudiante à l'Université de Moncton, je me spécialise en Machine Learning et analyse prédictive. 
+                        Mon objectif est d'utiliser la puissance des données pour créer un impact positif dans divers domaines. Bienvenue dans mon monde.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#projets" class="btn btn-primary btn-lg">Voir mes projets</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Projets Data Science</h2>
+            
+            <!-- Carousel Bootstrap -->
+            <div id="projetCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#projetCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Projet 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                               <img src="images/System.jpg"
+     class="d-block w-100 rounded project-img" 
+     alt="Data visualization and analytics">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Système de Recommandation E-commerce</h3>
+                                <p>
+                                    Développement d'un algorithme de recommandation basé sur le filtrage collaboratif et le contenu.
+                                    L'implémentation a permis d'augmenter le taux de conversion de 15% et le panier moyen de 12%.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">Scikit-learn</span>
+                                    <span class="badge bg-success">Pandas</span>
+                                    <span class="badge bg-info">Apache Spark</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+          <img src="images/ChurnPrediction.jpg" 
+     class="d-block w-100 rounded project-img" 
+     alt="Machine learning charts">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Modèle de Prédiction de Churn Clients</h3>
+                                <p>
+                                    Conception d'un modèle prédictif identifiant les clients à risque de désabonnement avec une précision de 92%.
+                                    L'implémentation a permis de réduire le taux de churn de 18% grâce à des campagnes de rétention ciblées.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">XGBoost</span>
+                                    <span class="badge bg-success">TensorFlow</span>
+                                    <span class="badge bg-warning">SQL</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                               <img src="images/SentimentAnalysis.jpg"
+     class="d-block w-100 rounded project-img" 
+     alt="Social media analytics">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Analyse de Sentiment sur Réseaux Sociaux</h3>
+                                <p>
+                                    Développement d'un modèle NLP pour analyser les sentiments exprimés sur les réseaux sociaux concernant des marques.
+                                    Le système traite plus de 10 000 tweets par jour avec une précision de 89%.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-secondary">NLTK</span>
+                                    <span class="badge bg-success">BERT</span>
+                                    <span class="badge bg-danger">MongoDB</span>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projetCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projetCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Mes Compétences en Data Science</h2>
+            <div class="row">
+                <!-- Langages de programmation -->
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Langages de Programmation & Outils</h4>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>R</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>SQL</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Scala</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technologies et Frameworks -->
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Technologies & Frameworks Data</h4>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-primary p-2">TensorFlow</span>
+                        <span class="badge bg-secondary p-2">PyTorch</span>
+                        <span class="badge bg-success p-2">Scikit-learn</span>
+                        <span class="badge bg-danger p-2">Keras</span>
+                        <span class="badge bg-warning p-2">Pandas</span>
+                        <span class="badge bg-info p-2">NumPy</span>
+                        <span class="badge bg-dark p-2">Apache Spark</span>
+                        <span class="badge bg-primary p-2">Hadoop</span>
+                    </div>
+                    
+                    <h4 class="mt-4 mb-3">Visualisation & Big Data</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-success p-2">Tableau</span>
+                        <span class="badge bg-info p-2">Power BI</span>
+                        <span class="badge bg-warning p-2">Matplotlib</span>
+                        <span class="badge bg-secondary p-2">Seaborn</span>
+                        <span class="badge bg-primary p-2">Plotly</span>
+                        <span class="badge bg-dark p-2">MongoDB</span>
+                        <span class="badge bg-danger p-2">Apache Kafka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Récompenses -->
+    <section id="recompenses" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Certifications & Récompenses</h2>
+            <div class="row">
+                <!-- Certification 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Professional Data Engineer</h5>
+                            <p class="card-text">Google Cloud - 2023</p>
+                            <div class="alert alert-success border-start-4 border-0" role="alert">
+                                Compétences validées: Conception de pipelines de données, Machine Learning sur GCP, Optimisation des systèmes Big Data
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS Certified Data Analytics</h5>
+                            <p class="card-text">Amazon Web Services - 2022</p>
+                            <div class="alert alert-info border-start-4 border-0" role="alert">
+                                Compétences validées: AWS Glue, Redshift, Kinesis, Quicksight, conception de solutions analytiques évolutives
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">IBM Data Science Professional Certificate</h5>
+                            <p class="card-text">IBM - 2022</p>
+                            <div class="alert alert-warning border-start-4 border-0" role="alert">
+                                Compétences validées: Méthodologie Data Science, Machine Learning, Visualisation de données, Outils Data Science
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Récompense 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Prix de l'Innovation Data</h5>
+                            <p class="card-text">Data Science Challenge - 2021</p>
+                            <div class="alert alert-primary border-start-4 border-0" role="alert">
+                                Récompense pour le développement d'un modèle prédictif innovant pour la détection de fraudes financières
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contactez-moi</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Informations de contact</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope me-2"></i>
+                            condekadijatou15@gmail.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone me-2"></i>
+                            (506) 269-1502
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            Moncton, Université de Moncton
+                        </li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Réseaux sociaux</h4>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-github fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-twitter fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-kaggle fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <h4>Formulaire de contact</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Kadijatou Condé. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS personnalisé -->
+    <script>
+        // Script pour améliorer l'interactivité du portfolio
+
+        // Initialisation des tooltips Bootstrap
+        document.addEventListener('DOMContentLoaded', function() {
+            // Activer tous les tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+            
+            // Gestion du formulaire de contact
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Récupération des valeurs du formulaire
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Simulation d'envoi (à remplacer par un vrai envoi)
+                    console.log('Formulaire soumis:', { name, email, subject, message });
+                    
+                    // Affichage d'un message de confirmation
+                    alert('Merci pour votre message! Je vous répondrai dans les plus brefs délais.');
+                    
+                    // Réinitialisation du formulaire
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
